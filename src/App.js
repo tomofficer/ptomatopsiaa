@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { Route, BrowserRouter, Routes } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './App.css';
+import Header from './Header';
+import Footer from './Footer';
+import Parturition from './Parturition';
+import parturition from './images/parturition.jpeg';
 
 function App() {
+  //state variables
+  const [showParturition, setShowParturition] = useState(false);
+
+  //click handlers
+  const parturitionClick = () => {
+    setShowParturition(!showParturition);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <BrowserRouter>
+        <Header />
+        <img src={parturition} alt='' onClick={parturitionClick} />
+        {showParturition && <Parturition />}
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
