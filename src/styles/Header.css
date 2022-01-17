@@ -1,0 +1,12 @@
+.main {
+  display: flex;
+  margin: 50px;
+}
+
+.header__main-container {
+  width: 700px;
+}
+
+.header {
+  max-width: 100%;
+}

@@ -1,0 +1,11 @@
+.footer__main-container {
+  background: black;
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 100px 30px 100px;
+}
+
+.footer__text {
+  color: white;
+  font-weight: 700;
+}
