@@ -1,4 +1,5 @@
 import parturition from './images/parturition.jpeg';
+import Sound from 'react-sound';
 
 const Parturition = () => {
   return (
@@ -8,6 +9,7 @@ const Parturition = () => {
           <img src={parturition} alt='' />
         </div>
         <div className='parturition__column2'>Song titles will go here</div>
+        <audio src=''></audio>
       </div>
     </div>
   );

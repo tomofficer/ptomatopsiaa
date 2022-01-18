@@ -16,8 +16,9 @@ function App() {
       <BrowserRouter>
         <div className='app__main-container'>
           <Header />
-          <MainAlbumDisplay />
+
           <Routes>
+            <Route path='/' element={<MainAlbumDisplay />} />
             <Route path='/parturition' element={<Parturition />} />
           </Routes>
         </div>
