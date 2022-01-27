@@ -4,6 +4,8 @@ import parturition from './images/parturition.jpeg';
 import './styles/MainAlbumDisplay.css';
 
 const MainAlbumDisplay = () => {
+  //add state variables for all album displays, add audio files into src folder, add audio tags, update images
+
   //state variables
   const [showParturition, setShowParturition] = useState(false);
   const [hideMainDisplay, setHideMainDisplay] = useState(true);
